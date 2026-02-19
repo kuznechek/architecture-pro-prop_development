@@ -1,0 +1,23 @@
+# users.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin
+  namespace: propdevelopment
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: security
+  namespace: propdevelopment
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: staff
+  namespace: propdevelopment
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: smarthome-operator
