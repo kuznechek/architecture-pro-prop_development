@@ -9,12 +9,12 @@ kubectl run admin-front-end-app --image=nginx --labels role=admin-front-end --ex
 kubectl run admin-back-end-api-app --image=nginx --labels role=admin-back-end-api --expose --port 80 -n propdevelopment
 ```
 
-![task5.png](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task5/task5-1.png)
+![task5.png](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task5/task5.png)
 
-# Скрипт для настройки траффика между подами
+# Сетевые политики
 
-[politics.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task5/politics.yaml)
+[network-policy.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task5/network-policy.yaml)
 
 ```
-kubectl apply -f politics.yaml
+kubectl apply -f network-policy.yaml
 ```

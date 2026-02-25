@@ -5,7 +5,7 @@ kind: ClusterRoleBinding
 metadata:
   name: devops-admin-binding
 subjects:
-  - kind: ServiceAccount
+  - kind: User
     name: admin
     namespace: propdevelopment
 roleRef:
@@ -19,7 +19,7 @@ kind: ClusterRoleBinding
 metadata:
   name: security-binding
 subjects:
-  - kind: ServiceAccount
+  - kind: User
     name: security
     namespace: propdevelopment
 roleRef:
@@ -33,7 +33,7 @@ kind: ClusterRoleBinding
 metadata:
   name: watcher-binding
 subjects:
-  - kind: ServiceAccount
+  - kind: User
     name: staff
     namespace: propdevelopment
 roleRef:
@@ -48,7 +48,7 @@ metadata:
   name: smarthome-operator-binding
   namespace: smarthome
 subjects:
-  - kind: ServiceAccount
+  - kind: User
     name: smarthome-operator
     namespace: smarthome
 roleRef:

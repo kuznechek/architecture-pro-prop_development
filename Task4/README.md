@@ -13,19 +13,35 @@
 
 ## Скрипт для неймспейсов
 
-[namespace.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/kubernetes/namespace.yaml)
+[namespace.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task4/namespace.yaml)
+
+```
+kubectl apply -f namespace.yaml
+```
 
 ## Скрипт для создания пользователей
 
-[users.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/kubernetes/users.yaml)
+[users.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task4/users.yaml)
+
+```
+kubectl apply -f users.yaml
+```
 
 ## Скрипт для определения ролей
 
-[role.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/kubernetes/role.yaml)
+[role.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task4/role.yaml)
+
+```
+kubectl apply -f role.yaml
+```
 
 ## Скрипт для связи пользователей с ролями
 
-[rolebinding.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/kubernetes/rolebinding.yaml)
+[rolebinding.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task4/rolebinding.yaml)
+
+```
+kubectl apply -f rolebinding.yaml
+```
 
 ## Результат
 
