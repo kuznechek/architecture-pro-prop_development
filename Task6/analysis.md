@@ -1,15 +1,4 @@
-# Задание 6. Аудит активности пользователей и обнаружение инцидентов
-
-[audit-policy.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task6/audit-policy.yaml)
-
-[filter-script.sh](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task6/filter-script.sh)
-
-[audit-extract.json](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task6/audit-extract.json)
-
-
 # Отчёт по результатам анализа Kubernetes Audit Log
-
-Приведённые ниже данные содержатся в файле [analysis.md](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task6/analysis.md).
 
 ## Подозрительные события
 
