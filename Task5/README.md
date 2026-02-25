@@ -13,4 +13,8 @@ kubectl run admin-back-end-api-app --image=nginx --labels role=admin-back-end-ap
 
 # Скрипт для настройки траффика между подами
 
-[politics.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/kubernetes/politics.yaml)
+[politics.yaml](https://github.com/kuznechek/architecture-pro-prop_development/blob/dev/Task5/politics.yaml)
+
+```
+kubectl apply -f politics.yaml
+```
