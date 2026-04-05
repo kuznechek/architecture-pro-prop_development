@@ -1,0 +1,34 @@
+# role.yaml
+# cluster-secret
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cluster-secret
+rules:
+  - apiGroups: ["*"]
+    resources: ["*"]
+    verbs: ["get", "list", "watch"]
+---
+# cluster-staff 
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cluster-staff 
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "services", "configmaps", "endpoints", "events"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["apps"]
+    resources: ["deployments", "replicasets", "statefulsets"]
+    verbs: ["get", "list", "watch"]
+---
+# smarthome-admin 
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: smarthome-admin
+  namespace: smarthome
+rules:
+  - apiGroups: ["*"]
+    resources: ["*"]
+    verbs: ["*"]
